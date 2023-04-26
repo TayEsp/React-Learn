@@ -1,0 +1,9 @@
+.SayMyNameContainer{
+    background-color: rgb(49, 49, 49);
+    border: 1px solid rgb(24, 24, 24);
+}
+
+.SayMyNameContent{
+    color: #ffffff;
+    margin: 0;
+}
