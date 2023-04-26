@@ -1,19 +1,16 @@
 import './App.css';
-import Helloword from './components/HelloWord'
+import SayMyName from './components/SayMyName'
+import Pessoa from './components/Pessoa'
 
 function App() {
   //nesse local podemos colocar as partes de javaScript
-
-  var name = "Tanya"
-  var novoNome = name.toLocaleUpperCase()
-
+  var name = "Leticia"
   //nessa funcao return colocamos tudo que é HTML
   return (
     <div className="App">
-
-      <Helloword/>
-      <h4>Olá, {novoNome}</h4>
-      
+      <SayMyName nome="Tayna"/>
+      <SayMyName nome={name}/>
+      <Pessoa nome="Tayna" idade="22" profissao="Programadora" foto="https://via.placeholder.com/50"/>
     </div>
   );
 }
