@@ -1,15 +1,20 @@
-//Criando metodo para o evento de onClick
-//utilizando de propiedades para diferenciar cada evento tambem
-function Evento({numero}){
 
+import Button from "./evento/Button"
+
+function Evento(){
     function meuEvento(){
-        console.log(`Fui ativado! ${numero}`)
+        console.log(`ativando o primeiro evento!`)
     }
 
+    function segundoEvento(){
+        console.log("ativando o segundo evento")
+    }
+    //passando um metodo pela props
     return(
         <div>
             <p>Clique para dispara um evento</p>
-            <button onClick={meuEvento}>Ativar</button>
+            <Button event={meuEvento} text="Primeiro Evento"/>
+            <Button event={segundoEvento} text="Segundo Evento"/>
         </div>
     )
 }

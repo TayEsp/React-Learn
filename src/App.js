@@ -8,8 +8,7 @@ function App() {
   //nessa funcao return colocamos tudo que é HTML
   return (
     <div className="App">
-        <Evento numero="1"/>
-        <Evento numero="2"/>
+        <Evento />
         <Forms/>
     </div>
   );
