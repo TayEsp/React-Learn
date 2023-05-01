@@ -1,15 +1,17 @@
 import './App.css';
-import Lista from './components/Lista';
+import {useState} from 'react'
+import SeuNome from './components/SeuNome';
+import Saudacao from './components/Saudacao';
 
 function App() {
   //nesse local podemos colocar as partes de javaScript
-  const meusItens = ['react', 'Vue', 'Angular']
-  //nessa funcao return colocamos tudo que é HTML
+  const [nome, setNome] = useState()
+  //subimos o state para o componente que é comum dos componentes que estamos utilizando
   return (
     <div className="App">
-        <h1>Renderização de Listas</h1>
-        <Lista itens={meusItens}/>
-        <Lista itens={[]}/>
+        <h1>State Lift</h1>
+        <SeuNome setNome = {setNome}/>
+        <Saudacao nome = {nome}/>
     </div>
   );
 }
